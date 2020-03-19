@@ -59,9 +59,11 @@ console.log(numericValue);
 var specialChar = confirm("Do you want special characters?");
 console.log(specialChar);
 
- 
+for (var index = 0; index < length; index++){
+    var character = Math.floor(Math.random() * (128 - 8))
+    password += userPassLength.substring(character, character + 1);
   
-
+}
 
   
  
