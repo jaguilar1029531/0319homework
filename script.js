@@ -18,8 +18,6 @@ function writePassword() {
 
   
 do {
-userPassLength = prompt("How long will your password be? It has to be between 8 and 128");
-console.log(userPassLength);
 var lowercase = confirm("Do you want lowercase?");
 console.log(lowercase);
 var uppercase = confirm("Do you want uppercase?");
