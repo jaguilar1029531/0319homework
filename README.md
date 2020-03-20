@@ -1,3 +1,10 @@
+The details of the goals are below. This was a very difficult assignment for me. I had to break down my understanding of 
+javascript and reorganize it. I developed a love for console logging to see where my code is heading. I reached out to TAs, instructors in office hours, and many other students in an effort to find my way here. I spent 10 hours today studying to figure this out. What I've provided is a code that will accept user's input password criteria. It works if only some of the criteria is entered. It works if no criteria is entered, prompting the user to try again, and it works in denying usage of a number of characters not allowed. The code loops so that if the user fails to correctly input choices, it will run again. Although difficult, I had fun with this project, and enjoyed the mental breakthroughs of clarity that came along with it. Be sure to go through the viewport and click cancel on all the confirmations, thats my favorite.
+
+
+
+
+
 # 03 JavaScript: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
