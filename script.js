@@ -16,6 +16,8 @@ var concats = [];
 // Write password to the #password input
 function writePassword() {
 
+  
+
 userPassLength = prompt("How long will your password be? It has to be between 8 and 128");
 console.log(userPassLength);
 var lowercase = confirm("Do you want lowercase?");
@@ -27,19 +29,24 @@ console.log(numericValue);
 var specialChar = confirm("Do you want special characters?");
 console.log(specialChar);
 
-// if (userPassLength >=8 && userPassLength <=128){}
-// else if (userPassLength <8) {
-// window.alert("password not long enough");
-// }
-// else {
-// window.alert("password too long")
-// }
-
-
-do {
-  
+if (userPassLength >=8 && userPassLength <=128){}
+else if (userPassLength <8) {
+window.alert("password not long enough");
 }
-while (userPassLength != (userPassLength >=8 && userPassLength <=128));
+else {
+window.alert("password too long")
+}
+
+// do{
+//   length= prompt("How long do you want your password to be? *Must be between 8-128*")  
+//  }  
+//  while( length < 8 || length > 128);
+
+
+// do {
+  
+// }
+// while (userPassLength != (userPassLength >=8 && userPassLength <=128));
 
 
 
@@ -76,6 +83,7 @@ generateBtn.addEventListener("click", writePassword);
   
  // below i am creating the variables for prompts
  function generatePassword()  {
+
 var password = "";
   for (var index = 0; index < parseInt(userPassLength); index++){
     var character = Math.floor(Math.random() * concats.length)
