@@ -17,7 +17,7 @@ var concats = [];
 function writePassword() {
 
   
-
+do {
 userPassLength = prompt("How long will your password be? It has to be between 8 and 128");
 console.log(userPassLength);
 var lowercase = confirm("Do you want lowercase?");
@@ -29,18 +29,28 @@ console.log(numericValue);
 var specialChar = confirm("Do you want special characters?");
 console.log(specialChar);
 
-if (userPassLength >=8 && userPassLength <=128){}
-else if (userPassLength <8) {
-window.alert("password not long enough");
-}
-else {
-window.alert("password too long")
-}
+// if (userPassLength >=8 && userPassLength <=128){}
+// else if (userPassLength <8) {
+// window.alert("password not long enough");
+// }
+// else {
+// window.alert("password too long")
+// }
 
-// do{
-//   length= prompt("How long do you want your password to be? *Must be between 8-128*")  
-//  }  
-//  while( length < 8 || length > 128);
+if(lowercase == false && uppercase == false && numericValue == false && specialChar == false) {
+  alert("try again, ugly")
+
+}
+  
+
+}
+while (lowercase == false && uppercase == false && numericValue == false && specialChar == false)
+
+
+do{
+  userPassLength= prompt("How long do you want your password to be? *Must be between 8-128*")  
+ }  
+ while( userPassLength < 8 || userPassLength > 128 || isNaN(userPassLength));
 
 
 // do {
@@ -69,6 +79,8 @@ if (specialChar == true) {
   concats = concats.concat(specialCharacters);
 }
 else (specialChar == false)
+
+
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
